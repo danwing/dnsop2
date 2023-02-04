@@ -3,7 +3,7 @@
 
 
 Adaptive DNS Discovery                                           D. Wing
-Internet-Draft                                                    Citrix
+Internet-Draft                                      Cloud Software Group
 Intended status: Informational                                  T. Reddy
 Expires: 8 August 2023                                             Nokia
                                                                  N. Cook
@@ -83,7 +83,7 @@ Table of Contents
 
    1.  Introduction
    2.  Conventions and Definitions
-   3.  Limitations of Filtering techniques
+   3.  DNS Filtering Techniques and Their Limitations
    4.  I-JSON in EXTRA-TEXT field
    5.  Protocol Operation
      5.1.  Client Generating Request
@@ -124,11 +124,11 @@ Table of Contents
    administrator to resolve erroneous filtering, log the information, or
    other uses.
 
-   For both DNS filtering mechanisms described in Section 4 of
-   (Section 3), the DNS server can return extended error codes Blocked,
-   Censored, Filtered, or Forged Answer defined in Section 4 of
-   [RFC8914].  However, these codes only explain that filtering occurred
-   but lack detail for the user to diagnose erroneous filtering.
+   For the DNS filtering mechanisms described in Section 3 the DNS
+   server can return extended error codes Blocked, Censored, Filtered,
+   or Forged Answer defined in Section 4 of [RFC8914].  However, these
+   codes only explain that filtering occurred but lack detail for the
+   user to diagnose erroneous filtering.
 
    No matter which type of response is generated (forged IP address(es),
    NXDOMAIN or empty answer, even with an extended error code), the user
@@ -172,7 +172,7 @@ Table of Contents
    messages, for example, DNS-over-HTTPS [RFC8484], DNS-over-TLS
    [RFC7858], or DNS-over-QUIC [RFC9250].
 
-3.  Limitations of Filtering techniques
+3.  DNS Filtering Techniques and Their Limitations
 
    DNS responses can be filtered by sending a bogus (also called,
    "forged") A or AAAA response, NXDOMAIN error or empty answer, or an
@@ -436,7 +436,8 @@ Table of Contents
      "o": "example.net Filtering Service"
    }
 
-                      Figure 1: example JSON response
+     Figure 1: JSON returned in EXTRA-TEXT field of Extended DNS Error
+                                  response
 
    In Figure 2 the same content is shown with minified JSON (no
    whitespace, no blank lines) with '\' line wrapping per [RFC8792].
@@ -448,7 +449,7 @@ Table of Contents
      "j":"malware present for 23 days","o":"example.net Filtering \
      Service"}
 
-                  Figure 2: example minified JSON response
+                        Figure 2: Minified response
 
 8.  Security Considerations
 
@@ -694,20 +695,27 @@ Acknowledgments
 Authors' Addresses
 
    Dan Wing
-   Citrix
+   Cloud Software Group
+   United States of America
    Email: dwing-ietf@fuggles.com
 
 
    Tirumaleswar Reddy
    Nokia
+   Bangalore
+   Karnataka
+   India
    Email: kondtir@gmail.com
 
 
    Neil Cook
    Open-Xchange
+   United Kingdom
    Email: neil.cook@noware.co.uk
 
 
    Mohamed Boucadair
    Orange
+   35000 Rennes
+   France
    Email: mohamed.boucadair@orange.com
