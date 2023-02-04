@@ -4,9 +4,9 @@
 
 Adaptive DNS Discovery                                           D. Wing
 Internet-Draft                                                    Citrix
-Intended status: Informational                                  T. Reddy
-Expires: 8 August 2023                                             Nokia
-                                                                 N. Cook
+Updates: 8914 (if approved)                                     T. Reddy
+Intended status: Standards Track                                   Nokia
+Expires: 8 August 2023                                           N. Cook
                                                             Open-Xchange
                                                             M. Boucadair
                                                                   Orange
@@ -35,9 +35,9 @@ About This Document
    This note is to be removed before publishing as an RFC.
 
    The latest revision of this draft can be found at
-   https://danwing.github.io/dnsop2/draft-ietf-add-dns-error-page.html.
-   Status information for this document may be found at
-   https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-
+   https://danwing.github.io/dnsop2/draft-ietf-dnsop-structured-dns-
+   error-page.html.  Status information for this document may be found
+   at https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-
    error-page/.
 
    Discussion of this document takes place on the dnsop Working Group
@@ -93,13 +93,12 @@ Table of Contents
    7.  Examples
    8.  Security Considerations
    9.  IANA Considerations
-     9.1.  New structured-dns-error media type
-     9.2.  New registry for SubError Codes
+     9.1.  New structured-dns-error Media Type
+     9.2.  New Registry for SubError Codes
+   10. References
+     10.1.  Normative References
+     10.2.  Informative References
    Acknowledgements
-   References
-     Normative References
-     Informative References
-   Acknowledgments
    Authors' Addresses
 
 1.  Introduction
@@ -484,9 +483,10 @@ Table of Contents
 
 9.  IANA Considerations
 
-   This document requests two IANA actions.
+   This document requests two IANA actions as described in the following
+   subsections.
 
-9.1.  New structured-dns-error media type
+9.1.  New structured-dns-error Media Type
 
    This document requests IANA to register the "application/
    json+structured-dns-error" media type in the "Media Types" registry
@@ -528,68 +528,68 @@ Table of Contents
 
       Provisional registration?  No
 
-9.2.  New registry for SubError Codes
+9.2.  New Registry for SubError Codes
 
-   IANA is requested to create a new registry, entitled "SubError Codes"
-   under "Domain Name System (DNS) Parameters, Extended DNS Error Codes"
-   registry.  A registration procedure for suberror codes MUST include
-   the following fields:
+   This document requests IANA to create a new registry, entitled
+   "SubError Codes" under "Domain Name System (DNS) Parameters, Extended
+   DNS Error Codes" registry [IANA-DNS].  The registration request for a
+   new suberror codes MUST include the following fields:
 
-   *  Number: wire format suberror code (range 0-255)
+   *  Number: Wire format suberror code (range 0-255)
 
-   *  Meaning: a short description
+   *  Meaning: A short description of the errir
 
-   *  Reference: pointer to the specification text
+   *  Reference: A pointer to the specification text
 
    *  Change Controller: Person or entity, with contact information if
       appropriate.
 
-   New entries in this registry are subject to an Expert Review
-   registration policy [RFC8126].  The designated expert MUST ensure
-   that the Reference is stable and publicly available, and that it
-   specifies the suberror code and a short description.  The Format
-   Reference may be any individual's Internet-Draft, or a document from
-   any other source with similar assurances of stability and
-   availability.
-
    The SubError Code registry shall initially be populated with the
    following suberror codes:
 
-    +========+=============================+===========+============+
-    | Number | Meaning                     | Reference | Change     |
-    |        |                             |           | Controller |
-    +========+=============================+===========+============+
-    | 0      | Reserved                    | This      | IETF       |
-    |        |                             | document  |            |
-    +--------+-----------------------------+-----------+------------+
-    | 1      | Malware                     | This      | IETF       |
-    |        |                             | document  |            |
-    +--------+-----------------------------+-----------+------------+
-    | 2      | Phishing                    | This      | IETF       |
-    |        |                             | document  |            |
-    +--------+-----------------------------+-----------+------------+
-    | 3      | Spam                        | This      | IETF       |
-    |        |                             | document  |            |
-    +--------+-----------------------------+-----------+------------+
-    | 4      | Spyware                     | This      | IETF       |
-    |        |                             | document  |            |
-    +--------+-----------------------------+-----------+------------+
-    | 5      | Adware                      | This      | IETF       |
-    |        |                             | document  |            |
-    +--------+-----------------------------+-----------+------------+
-    | 6      | Network policy imposed by   | This      | IETF       |
-    |        | the operator of the network | document  |            |
-    +--------+-----------------------------+-----------+------------+
+   +========+=============================+===============+============+
+   | Number | Meaning                     | Reference     | Change     |
+   |        |                             |               | Controller |
+   +========+=============================+===============+============+
+   | 0      | Reserved                    | This-Document | IETF       |
+   +--------+-----------------------------+---------------+------------+
+   | 1      | Malware                     | This-Document | IETF       |
+   +--------+-----------------------------+---------------+------------+
+   | 2      | Phishing                    | This-Document | IETF       |
+   +--------+-----------------------------+---------------+------------+
+   | 3      | Spam                        | This-Document | IETF       |
+   +--------+-----------------------------+---------------+------------+
+   | 4      | Spyware                     | This-Document | IETF       |
+   +--------+-----------------------------+---------------+------------+
+   | 5      | Adware                      | This-Document | IETF       |
+   +--------+-----------------------------+---------------+------------+
+   | 6      | Network policy imposed      | This-Document | IETF       |
+   |        | by the operator of the      |               |            |
+   |        | network                     |               |            |
+   +--------+-----------------------------+---------------+------------+
 
-Acknowledgements
+                  Table 1: Initial SubError Code Rregistry
 
-   Thanks to Vittorio Bertola, Wes Hardaker, Ben Schwartz, Erid Orth,
-   Viktor Dukhovni, Warren Kumari, Paul Wouters, John Levine and Bob
-   Harold for the comments.
+   New entries in this registry are subject to an Expert Review
+   registration policy [RFC8126].  The designated expert MUST ensure
+   that the Reference is stable and publicly available, and that it
+   specifies the suberror code and a short description.  The reference
+   may be an individual Internet-Draft, or a document from any other
+   source with similar assurances of stability and availability.
 
-References
+   Review requests are evaluated on the advice of one or more designated
+   experts.  Criteria that should be applied by the designated experts
+   include determining whether the proposed registration duplicates
+   existing entries and whether the registration description is
+   sufficiently detailed and fits the purpose of this registry.  The
+   designated experts will either approve or deny the registration
+   request, communicating this decision to IANA.  Denials should include
+   an explanation and, if applicable, suggestions as to how to make the
+   request successful.
 
-Normative References
+10.  References
+
+10.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -637,7 +637,7 @@ Normative References
               DOI 10.17487/RFC8914, October 2020,
               <https://www.rfc-editor.org/rfc/rfc8914>.
 
-Informative References
+10.2.  Informative References
 
    [Chrome-Translate]
               "Change Chrome languages & translate webpages",
@@ -649,6 +649,10 @@ Informative References
               resolver-info-06, 31 August 2022,
               <https://datatracker.ietf.org/doc/html/draft-reddy-add-
               resolver-info-06>.
+
+   [IANA-DNS] IANA, "Domain Name System (DNS) Parameters, Extended DNS
+              Error Codes", <https://www.iana.org/assignments/dns-
+              parameters/dns-parameters.xhtml#extended-dns-error-codes>.
 
    [IANA-MediaTypes]
               IANA, "Media Types",
@@ -688,9 +692,11 @@ Informative References
 
    [RPZ]      "Response Policy Zone", <https://dnsrpz.info>.
 
-Acknowledgments
+Acknowledgements
 
-   TODO acknowledge.
+   Thanks to Vittorio Bertola, Wes Hardaker, Ben Schwartz, Erid Orth,
+   Viktor Dukhovni, Warren Kumari, Paul Wouters, John Levine, and Bob
+   Harold for the comments.
 
 Authors' Addresses
 
@@ -716,6 +722,7 @@ Authors' Addresses
 
    Mohamed Boucadair
    Orange
-   35000 Rennes
+   Rennes
+   35000
    France
    Email: mohamed.boucadair@orange.com

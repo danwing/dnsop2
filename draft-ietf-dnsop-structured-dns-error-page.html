@@ -22,9 +22,10 @@ other purposes. Other than that, this document does not change any
 thing written in RFC 8914. 
     " name="description">
 <meta content="xml2rfc 3.16.0" name="generator">
-<meta content="next generation" name="keyword">
-<meta content="unicorn" name="keyword">
-<meta content="sparkling distributed ledger" name="keyword">
+<meta content="Customer experience" name="keyword">
+<meta content="Informed decision" name="keyword">
+<meta content="transparency" name="keyword">
+<meta content="enriched feedback" name="keyword">
 <meta content="draft-ietf-dnsop-structured-dns-error-page-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.16.0
@@ -1066,12 +1067,15 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="workgroup">Adaptive DNS Discovery</dd>
 <dt class="label-internet-draft">Internet-Draft:</dt>
 <dd class="internet-draft">draft-ietf-dnsop-structured-dns-error-page-latest</dd>
+<dt class="label-updates">Updates:</dt>
+<dd class="updates">
+<a href="https://www.rfc-editor.org/rfc/rfc8914" class="eref">8914</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
 <time datetime="2023-02-04" class="published">4 February 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
-<dd class="intended-status">Informational</dd>
+<dd class="intended-status">Standards Track</dd>
 <dt class="label-expires">Expires:</dt>
 <dd class="expires"><time datetime="2023-08-08">8 August 2023</time></dd>
 <dt class="label-authors">Authors:</dt>
@@ -1115,7 +1119,7 @@ thing written in RFC 8914.<a href="#section-abstract-2" class="pilcrow">¶</a></
       </h2>
 <p id="section-note.1-1">This note is to be removed before publishing as an RFC.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
 <p id="section-note.1-2">
-        The latest revision of this draft can be found at <span><a href="https://danwing.github.io/dnsop2/draft-ietf-add-dns-error-page.html">https://danwing.github.io/dnsop2/draft-ietf-add-dns-error-page.html</a></span>.
+        The latest revision of this draft can be found at <span><a href="https://danwing.github.io/dnsop2/draft-ietf-dnsop-structured-dns-error-page.html">https://danwing.github.io/dnsop2/draft-ietf-dnsop-structured-dns-error-page.html</a></span>.
         Status information for this document may be found at <span><a href="https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error-page/">https://datatracker.ietf.org/doc/draft-ietf-dnsop-structured-dns-error-page/</a></span>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
 <p id="section-note.1-3">
         Discussion of this document takes place on the
@@ -1212,32 +1216,29 @@ thing written in RFC 8914.<a href="#section-abstract-2" class="pilcrow">¶</a></
             <p id="section-toc.1-1.9.1"><a href="#section-9" class="auto internal xref">9</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9.2.1">
-                <p id="section-toc.1-1.9.2.1.1"><a href="#section-9.1" class="auto internal xref">9.1</a>.  <a href="#name-new-structured-dns-error-me" class="internal xref">New structured-dns-error media type</a></p>
+                <p id="section-toc.1-1.9.2.1.1"><a href="#section-9.1" class="auto internal xref">9.1</a>.  <a href="#name-new-structured-dns-error-me" class="internal xref">New structured-dns-error Media Type</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9.2.2">
-                <p id="section-toc.1-1.9.2.2.1"><a href="#section-9.2" class="auto internal xref">9.2</a>.  <a href="#name-new-registry-for-suberror-c" class="internal xref">New registry for SubError Codes</a></p>
+                <p id="section-toc.1-1.9.2.2.1"><a href="#section-9.2" class="auto internal xref">9.2</a>.  <a href="#name-new-registry-for-suberror-c" class="internal xref">New Registry for SubError Codes</a></p>
 </li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
-            <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref"></a><a href="#name-acknowledgements" class="internal xref">Acknowledgements</a></p>
-</li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
-            <p id="section-toc.1-1.11.1"><a href="#section-11" class="auto internal xref"></a><a href="#name-references" class="internal xref">References</a></p>
+            <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-references" class="internal xref">References</a></p>
 <ul class="compact toc ulBare ulEmpty">
-<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11.2.1">
-                <p id="section-toc.1-1.11.2.1.1"><a href="#section-11.1" class="auto internal xref"></a><a href="#name-normative-references" class="internal xref">Normative References</a></p>
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10.2.1">
+                <p id="section-toc.1-1.10.2.1.1"><a href="#section-10.1" class="auto internal xref">10.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
 </li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11.2.2">
-                <p id="section-toc.1-1.11.2.2.1"><a href="#section-11.2" class="auto internal xref"></a><a href="#name-informative-references" class="internal xref">Informative References</a></p>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10.2.2">
+                <p id="section-toc.1-1.10.2.2.1"><a href="#section-10.2" class="auto internal xref">10.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
 </li>
             </ul>
 </li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
-            <p id="section-toc.1-1.12.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.11">
+            <p id="section-toc.1-1.11.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgements" class="internal xref">Acknowledgements</a></p>
 </li>
-          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.13">
-            <p id="section-toc.1-1.13.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
+          <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.12">
+            <p id="section-toc.1-1.12.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-addresses" class="internal xref">Authors' Addresses</a></p>
 </li>
         </ul>
 </nav>
@@ -1675,11 +1676,11 @@ encrypted DNS channel or integrity protected with DNSSEC.<a href="#section-8-5" 
       <h2 id="name-iana-considerations">
 <a href="#section-9" class="section-number selfRef">9. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
-<p id="section-9-1">This document requests two IANA actions.<a href="#section-9-1" class="pilcrow">¶</a></p>
+<p id="section-9-1">This document requests two IANA actions as described in the following subsections.<a href="#section-9-1" class="pilcrow">¶</a></p>
 <div id="new-structured-dns-error-media-type">
 <section id="section-9.1">
         <h3 id="name-new-structured-dns-error-me">
-<a href="#section-9.1" class="section-number selfRef">9.1. </a><a href="#name-new-structured-dns-error-me" class="section-name selfRef">New structured-dns-error media type</a>
+<a href="#section-9.1" class="section-number selfRef">9.1. </a><a href="#name-new-structured-dns-error-me" class="section-name selfRef">New structured-dns-error Media Type</a>
         </h3>
 <p id="section-9.1-1">This document requests IANA to register the
 "application/json+structured-dns-error" media type in the "Media
@@ -1728,80 +1729,110 @@ procedures specified in <span>[<a href="#RFC6838" class="cite xref">RFC6838</a>]
 <div id="new-registry-for-suberror-codes">
 <section id="section-9.2">
         <h3 id="name-new-registry-for-suberror-c">
-<a href="#section-9.2" class="section-number selfRef">9.2. </a><a href="#name-new-registry-for-suberror-c" class="section-name selfRef">New registry for SubError Codes</a>
+<a href="#section-9.2" class="section-number selfRef">9.2. </a><a href="#name-new-registry-for-suberror-c" class="section-name selfRef">New Registry for SubError Codes</a>
         </h3>
-<p id="section-9.2-1">IANA is requested to create a new registry, entitled "SubError Codes"
+<p id="section-9.2-1">This document requests IANA to create a new registry, entitled "SubError Codes"
 under "Domain Name System (DNS) Parameters, Extended DNS Error Codes"
-registry. A registration procedure for suberror codes <span class="bcp14">MUST</span> include the
+registry <span>[<a href="#IANA-DNS" class="cite xref">IANA-DNS</a>]</span>. The registration request for a new suberror codes <span class="bcp14">MUST</span> include the
 following fields:<a href="#section-9.2-1" class="pilcrow">¶</a></p>
 <ul class="normal">
-<li class="normal" id="section-9.2-2.1">Number: wire format suberror code (range 0-255)<a href="#section-9.2-2.1" class="pilcrow">¶</a>
+<li class="normal" id="section-9.2-2.1">Number: Wire format suberror code (range 0-255)<a href="#section-9.2-2.1" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-9.2-2.2">Meaning: a short description<a href="#section-9.2-2.2" class="pilcrow">¶</a>
+          <li class="normal" id="section-9.2-2.2">Meaning: A short description of the errir<a href="#section-9.2-2.2" class="pilcrow">¶</a>
 </li>
-          <li class="normal" id="section-9.2-2.3">Reference: pointer to the specification text<a href="#section-9.2-2.3" class="pilcrow">¶</a>
+          <li class="normal" id="section-9.2-2.3">Reference: A pointer to the specification text<a href="#section-9.2-2.3" class="pilcrow">¶</a>
 </li>
           <li class="normal" id="section-9.2-2.4">Change Controller: Person or entity, with contact information if appropriate.<a href="#section-9.2-2.4" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-9.2-3">New entries in this registry are subject to an Expert Review
+<p id="section-9.2-3">The SubError Code registry shall initially be populated with the
+following suberror codes:<a href="#section-9.2-3" class="pilcrow">¶</a></p>
+<span id="name-initial-suberror-code-rregi"></span><div id="reg">
+<table class="center" id="table-1">
+          <caption>
+<a href="#table-1" class="selfRef">Table 1</a>:
+<a href="#name-initial-suberror-code-rregi" class="selfRef">Initial SubError Code Rregistry</a>
+          </caption>
+<thead>
+            <tr>
+              <th class="text-left" rowspan="1" colspan="1">Number</th>
+              <th class="text-left" rowspan="1" colspan="1">Meaning</th>
+              <th class="text-left" rowspan="1" colspan="1">Reference</th>
+              <th class="text-left" rowspan="1" colspan="1">Change Controller</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">0</td>
+              <td class="text-left" rowspan="1" colspan="1">Reserved</td>
+              <td class="text-left" rowspan="1" colspan="1">This-Document</td>
+              <td class="text-left" rowspan="1" colspan="1">IETF</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">1</td>
+              <td class="text-left" rowspan="1" colspan="1">Malware</td>
+              <td class="text-left" rowspan="1" colspan="1">This-Document</td>
+              <td class="text-left" rowspan="1" colspan="1">IETF</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">2</td>
+              <td class="text-left" rowspan="1" colspan="1">Phishing</td>
+              <td class="text-left" rowspan="1" colspan="1">This-Document</td>
+              <td class="text-left" rowspan="1" colspan="1">IETF</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">3</td>
+              <td class="text-left" rowspan="1" colspan="1">Spam</td>
+              <td class="text-left" rowspan="1" colspan="1">This-Document</td>
+              <td class="text-left" rowspan="1" colspan="1">IETF</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">4</td>
+              <td class="text-left" rowspan="1" colspan="1">Spyware</td>
+              <td class="text-left" rowspan="1" colspan="1">This-Document</td>
+              <td class="text-left" rowspan="1" colspan="1">IETF</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">5</td>
+              <td class="text-left" rowspan="1" colspan="1">Adware</td>
+              <td class="text-left" rowspan="1" colspan="1">This-Document</td>
+              <td class="text-left" rowspan="1" colspan="1">IETF</td>
+            </tr>
+            <tr>
+              <td class="text-left" rowspan="1" colspan="1">6</td>
+              <td class="text-left" rowspan="1" colspan="1">Network policy imposed by the operator of the network</td>
+              <td class="text-left" rowspan="1" colspan="1">This-Document</td>
+              <td class="text-left" rowspan="1" colspan="1">IETF</td>
+            </tr>
+          </tbody>
+        </table>
+</div>
+<p id="section-9.2-5">New entries in this registry are subject to an Expert Review
 registration policy <span>[<a href="#RFC8126" class="cite xref">RFC8126</a>]</span>. The designated expert <span class="bcp14">MUST</span> ensure that
 the Reference is stable and publicly available, and that it specifies
-the suberror code and a short description. The Format Reference may be
-any individual's Internet-Draft, or a document from any other source
-with similar assurances of stability and availability.<a href="#section-9.2-3" class="pilcrow">¶</a></p>
-<p id="section-9.2-4">The SubError Code registry shall initially be populated with the
-following suberror codes:<a href="#section-9.2-4" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-9.2-5">
-<pre>
- +========+=============================+===========+============+
- | Number | Meaning                     | Reference | Change     |
- |        |                             |           | Controller |
- +========+=============================+===========+============+
- | 0      | Reserved                    | This      | IETF       |
- |        |                             | document  |            |
- +--------+-----------------------------+-----------+------------+
- | 1      | Malware                     | This      | IETF       |
- |        |                             | document  |            |
- +--------+-----------------------------+-----------+------------+
- | 2      | Phishing                    | This      | IETF       |
- |        |                             | document  |            |
- +--------+-----------------------------+-----------+------------+
- | 3      | Spam                        | This      | IETF       |
- |        |                             | document  |            |
- +--------+-----------------------------+-----------+------------+
- | 4      | Spyware                     | This      | IETF       |
- |        |                             | document  |            |
- +--------+-----------------------------+-----------+------------+
- | 5      | Adware                      | This      | IETF       |
- |        |                             | document  |            |
- +--------+-----------------------------+-----------+------------+
- | 6      | Network policy imposed by   | This      | IETF       |
- |        | the operator of the network | document  |            |
- +--------+-----------------------------+-----------+------------+
-</pre><a href="#section-9.2-5" class="pilcrow">¶</a>
-</div>
+the suberror code and a short description. The reference may be
+an individual Internet-Draft, or a document from any other source
+with similar assurances of stability and availability.<a href="#section-9.2-5" class="pilcrow">¶</a></p>
+<p id="section-9.2-6">Review requests are evaluated on the advice of one or more
+designated experts. Criteria that should be applied by the designated
+experts include determining whether the proposed registration
+duplicates existing entries and whether the registration description
+is sufficiently detailed and fits the purpose of this registry.
+The designated experts will either approve or deny the registration
+request, communicating this decision to IANA. Denials should
+include an explanation and, if applicable, suggestions as to how
+to make the request successful.<a href="#section-9.2-6" class="pilcrow">¶</a></p>
 </section>
 </div>
 </section>
 </div>
-<div id="acknowledgements">
 <section id="section-10">
-      <h2 id="name-acknowledgements">
-<a href="#name-acknowledgements" class="section-name selfRef">Acknowledgements</a>
-      </h2>
-<p id="section-10-1">Thanks to Vittorio Bertola, Wes Hardaker, Ben Schwartz, Erid Orth,
-Viktor Dukhovni, Warren Kumari, Paul Wouters, John Levine and Bob
-Harold for the comments.<a href="#section-10-1" class="pilcrow">¶</a></p>
-</section>
-</div>
-<section id="section-11">
       <h2 id="name-references">
-<a href="#name-references" class="section-name selfRef">References</a>
+<a href="#section-10" class="section-number selfRef">10. </a><a href="#name-references" class="section-name selfRef">References</a>
       </h2>
-<section id="section-11.1">
+<section id="section-10.1">
         <h3 id="name-normative-references">
-<a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-10.1" class="section-number selfRef">10.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
 <dt id="RFC2119">[RFC2119]</dt>
@@ -1846,9 +1877,9 @@ Harold for the comments.<a href="#section-10-1" class="pilcrow">¶</a></p>
 <dd class="break"></dd>
 </dl>
 </section>
-<section id="section-11.2">
+<section id="section-10.2">
         <h3 id="name-informative-references">
-<a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+<a href="#section-10.2" class="section-number selfRef">10.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
         </h3>
 <dl class="references">
 <dt id="Chrome-Translate">[Chrome-Translate]</dt>
@@ -1858,6 +1889,10 @@ Harold for the comments.<a href="#section-10-1" class="pilcrow">¶</a></p>
 <dt id="I-D.reddy-add-resolver-info">[I-D.reddy-add-resolver-info]</dt>
         <dd>
 <span class="refAuthor">Reddy.K, T.</span> and <span class="refAuthor">M. Boucadair</span>, <span class="refTitle">"DNS Resolver Information"</span>, <span class="refContent">Work in Progress</span>, <span class="seriesInfo">Internet-Draft, draft-reddy-add-resolver-info-06</span>, <time datetime="2022-08-31" class="refDate">31 August 2022</time>, <span>&lt;<a href="https://datatracker.ietf.org/doc/html/draft-reddy-add-resolver-info-06">https://datatracker.ietf.org/doc/html/draft-reddy-add-resolver-info-06</a>&gt;</span>. </dd>
+<dd class="break"></dd>
+<dt id="IANA-DNS">[IANA-DNS]</dt>
+        <dd>
+<span class="refAuthor">IANA</span>, <span class="refTitle">"Domain Name System (DNS) Parameters, Extended DNS Error Codes"</span>, <span>&lt;<a href="https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#extended-dns-error-codes">https://www.iana.org/assignments/dns-parameters/dns-parameters.xhtml#extended-dns-error-codes</a>&gt;</span>. </dd>
 <dd class="break"></dd>
 <dt id="IANA-MediaTypes">[IANA-MediaTypes]</dt>
         <dd>
@@ -1898,12 +1933,14 @@ Harold for the comments.<a href="#section-10-1" class="pilcrow">¶</a></p>
 </dl>
 </section>
 </section>
-<div id="acknowledgments">
+<div id="acknowledgements">
 <section id="appendix-A">
-      <h2 id="name-acknowledgments">
-<a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
+      <h2 id="name-acknowledgements">
+<a href="#name-acknowledgements" class="section-name selfRef">Acknowledgements</a>
       </h2>
-<p id="appendix-A-1">TODO acknowledge.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-A-1">Thanks to Vittorio Bertola, Wes Hardaker, Ben Schwartz, Erid Orth,
+Viktor Dukhovni, Warren Kumari, Paul Wouters, John Levine, and Bob
+Harold for the comments.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">
@@ -1944,7 +1981,9 @@ Harold for the comments.<a href="#section-10-1" class="pilcrow">¶</a></p>
 <address class="vcard">
         <div dir="auto" class="left"><span class="fn nameRole">Mohamed Boucadair</span></div>
 <div dir="auto" class="left"><span class="org">Orange</span></div>
-<div dir="auto" class="left"><span class="street-address">35000 Rennes</span></div>
+<div dir="auto" class="left"><span class="street-address">Rennes</span></div>
+<div dir="auto" class="left">
+<span class="postal-code">35000</span> </div>
 <div dir="auto" class="left"><span class="country-name">France</span></div>
 <div class="email">
 <span>Email:</span>
