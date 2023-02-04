@@ -3,7 +3,7 @@
 
 
 Adaptive DNS Discovery                                           D. Wing
-Internet-Draft                                      Cloud Software Group
+Internet-Draft                                                    Citrix
 Intended status: Informational                                  T. Reddy
 Expires: 8 August 2023                                             Nokia
                                                                  N. Cook
@@ -695,7 +695,7 @@ Acknowledgments
 Authors' Addresses
 
    Dan Wing
-   Cloud Software Group
+   Citrix Systems, Inc.
    United States of America
    Email: dwing-ietf@fuggles.com
 
