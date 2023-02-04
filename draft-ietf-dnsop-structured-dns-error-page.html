@@ -1055,7 +1055,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
 </tr></thead>
 <tfoot><tr>
 <td class="left">Wing, et al.</td>
-<td class="center">Expires 7 August 2023</td>
+<td class="center">Expires 8 August 2023</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1068,12 +1068,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-ietf-dnsop-structured-dns-error-page-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2023-02-03" class="published">3 February 2023</time>
+<time datetime="2023-02-04" class="published">4 February 2023</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2023-08-07">7 August 2023</time></dd>
+<dd class="expires"><time datetime="2023-08-08">8 August 2023</time></dd>
 <dt class="label-authors">Authors:</dt>
 <dd class="authors">
 <div class="author">
@@ -1144,7 +1144,7 @@ thing written in RFC 8914.<a href="#section-abstract-2" class="pilcrow">¶</a></
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 7 August 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 8 August 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1216,9 +1216,6 @@ thing written in RFC 8914.<a href="#section-abstract-2" class="pilcrow">¶</a></
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9.2.2">
                 <p id="section-toc.1-1.9.2.2.1"><a href="#section-9.2" class="auto internal xref">9.2</a>.  <a href="#name-new-registry-for-suberror-c" class="internal xref">New registry for SubError Codes</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9.2.3">
-                <p id="section-toc.1-1.9.2.3.1"><a href="#section-9.3" class="auto internal xref">9.3</a>.  <a href="#name-initial-sub-errors" class="internal xref">Initial Sub-errors</a></p>
 </li>
             </ul>
 </li>
@@ -1602,8 +1599,10 @@ EDE-aware clients from EDE-unaware clients and respond appropriately.<a href="#s
 <a href="#section-7" class="section-number selfRef">7. </a><a href="#name-examples" class="section-name selfRef">Examples</a>
       </h2>
 <p id="section-7-1">An example showing the nameserver at 'ns.example.net' that filtered a
-DNS "A" record query for 'example.org' is shown in Figure 1.<a href="#section-7-1" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-7-2">
+DNS "A" record query for 'example.org' is shown in <a href="#example-json" class="auto internal xref">Figure 1</a>.<a href="#section-7-1" class="pilcrow">¶</a></p>
+<span id="name-example-json-response"></span><div id="example-json">
+<figure id="figure-1">
+        <div class="alignLeft art-text artwork" id="section-7-2.1">
 <pre>
 {
   "c": [
@@ -1615,11 +1614,17 @@ DNS "A" record query for 'example.org' is shown in Figure 1.<a href="#section-7-
   "s": 1,
   "o": "example.net Filtering Service"
 }
-</pre><a href="#section-7-2" class="pilcrow">¶</a>
+</pre>
 </div>
-<p id="section-7-3">In Figure 2 the same content is shown with minified JSON (no
+<figcaption><a href="#figure-1" class="selfRef">Figure 1</a>:
+<a href="#name-example-json-response" class="selfRef">example JSON response</a>
+        </figcaption></figure>
+</div>
+<p id="section-7-3">In <a href="#example-json-minified" class="auto internal xref">Figure 2</a> the same content is shown with minified JSON (no
 whitespace, no blank lines) with '\' line wrapping per <span>[<a href="#RFC8792" class="cite xref">RFC8792</a>]</span>.<a href="#section-7-3" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-7-4">
+<span id="name-example-minified-json-respo"></span><div id="example-json-minified">
+<figure id="figure-2">
+        <div class="alignLeft art-text artwork" id="section-7-4.1">
 <pre>
  ============== NOTE: '\' line wrapping per RFC 8792 ===============
 
@@ -1627,7 +1632,11 @@ whitespace, no blank lines) with '\' line wrapping per <span>[<a href="#RFC8792"
   "https://ticket.example.com?d=example.org&amp;t=1650560748"],"s":1, \
   "j":"malware present for 23 days","o":"example.net Filtering \
   Service"}
-</pre><a href="#section-7-4" class="pilcrow">¶</a>
+</pre>
+</div>
+<figcaption><a href="#figure-2" class="selfRef">Figure 2</a>:
+<a href="#name-example-minified-json-respo" class="selfRef">example minified JSON response</a>
+        </figcaption></figure>
 </div>
 </section>
 </div>
@@ -1741,15 +1750,9 @@ the Reference is stable and publicly available, and that it specifies
 the suberror code and a short description. The Format Reference may be
 any individual's Internet-Draft, or a document from any other source
 with similar assurances of stability and availability.<a href="#section-9.2-3" class="pilcrow">¶</a></p>
-</section>
-</div>
-<div id="initial-sub-errors">
-<section id="section-9.3">
-        <h3 id="name-initial-sub-errors">
-<a href="#section-9.3" class="section-number selfRef">9.3. </a><a href="#name-initial-sub-errors" class="section-name selfRef">Initial Sub-errors</a>
-        </h3>
-<p id="section-9.3-1">The registry shall initially be populated with the following suberror codes:<a href="#section-9.3-1" class="pilcrow">¶</a></p>
-<div class="alignLeft art-text artwork" id="section-9.3-2">
+<p id="section-9.2-4">The SubError Code registry shall initially be populated with the
+following suberror codes:<a href="#section-9.2-4" class="pilcrow">¶</a></p>
+<div class="alignLeft art-text artwork" id="section-9.2-5">
 <pre>
  +========+=============================+===========+============+
  | Number | Meaning                     | Reference | Change     |
@@ -1776,7 +1779,7 @@ with similar assurances of stability and availability.<a href="#section-9.2-3" c
  | 6      | Network policy imposed by   | This      | IETF       |
  |        | the operator of the network | document  |            |
  +--------+-----------------------------+-----------+------------+
-</pre><a href="#section-9.3-2" class="pilcrow">¶</a>
+</pre><a href="#section-9.2-5" class="pilcrow">¶</a>
 </div>
 </section>
 </div>

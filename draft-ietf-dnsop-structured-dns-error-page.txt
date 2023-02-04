@@ -5,12 +5,12 @@
 Adaptive DNS Discovery                                           D. Wing
 Internet-Draft                                                    Citrix
 Intended status: Informational                                  T. Reddy
-Expires: 7 August 2023                                             Nokia
+Expires: 8 August 2023                                             Nokia
                                                                  N. Cook
                                                             Open-Xchange
                                                             M. Boucadair
                                                                   Orange
-                                                         3 February 2023
+                                                         4 February 2023
 
 
                     Structured Data for Filtered DNS
@@ -63,7 +63,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 August 2023.
+   This Internet-Draft will expire on 8 August 2023.
 
 Copyright Notice
 
@@ -95,7 +95,6 @@ Table of Contents
    9.  IANA Considerations
      9.1.  New structured-dns-error media type
      9.2.  New registry for SubError Codes
-     9.3.  Initial Sub-errors
    Acknowledgements
    References
      Normative References
@@ -437,6 +436,8 @@ Table of Contents
      "o": "example.net Filtering Service"
    }
 
+                      Figure 1: example JSON response
+
    In Figure 2 the same content is shown with minified JSON (no
    whitespace, no blank lines) with '\' line wrapping per [RFC8792].
 
@@ -446,6 +447,8 @@ Table of Contents
      "https://ticket.example.com?d=example.org&t=1650560748"],"s":1, \
      "j":"malware present for 23 days","o":"example.net Filtering \
      Service"}
+
+                  Figure 2: example minified JSON response
 
 8.  Security Considerations
 
@@ -548,10 +551,8 @@ Table of Contents
    any other source with similar assurances of stability and
    availability.
 
-9.3.  Initial Sub-errors
-
-   The registry shall initially be populated with the following suberror
-   codes:
+   The SubError Code registry shall initially be populated with the
+   following suberror codes:
 
     +========+=============================+===========+============+
     | Number | Meaning                     | Reference | Change     |
