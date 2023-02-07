@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-02-05T01:16:58.452155+00:00",
+  "timestamp": "2023-02-07T01:11:33.676009+00:00",
   "repo": "danwing/dnsop2",
   "labels": [
     {
@@ -56,25 +56,33 @@
       "id": "PR_kwDOI5jTFc5JQakj",
       "title": "fix some formatting + more text for the design expert review",
       "url": "https://github.com/danwing/dnsop2/pull/1",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "boucadair",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2023-02-04T09:51:53Z",
-      "updatedAt": "2023-02-04T09:51:54Z",
+      "updatedAt": "2023-02-06T06:22:30Z",
       "baseRepository": "danwing/dnsop2",
       "baseRefName": "main",
       "baseRefOid": "c453ce953ad9e2af773d99469851d1b50ad4d3fb",
       "headRepository": "boucadair/dnsop2",
       "headRefName": "patch-1",
       "headRefOid": "f1e1a336052dd73d166d2dfc54997b1888f5c25c",
-      "closedAt": null,
+      "closedAt": "2023-02-06T06:22:30Z",
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "boucadair",
+          "authorAssociation": "NONE",
+          "body": "Dan merged these changes in https://github.com/danwing/dnsop2/commit/6012c2c2cab95b1cdb879edfa3368a90744881bf",
+          "createdAt": "2023-02-06T06:22:30Z",
+          "updatedAt": "2023-02-06T06:22:30Z"
+        }
+      ],
       "reviews": []
     }
   ]
