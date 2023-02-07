@@ -538,7 +538,9 @@ following fields:
 
 * Number: Wire format suberror code (range 0-255)
 
-* Meaning: A short description of the errir
+* Meaning: A short description of the error
+
+* Applicability: Indicates which RFC8914 error codes apply to this sub-error code
 
 * Reference: A pointer to the specification text
 
@@ -547,14 +549,14 @@ following fields:
 The SubError Code registry shall initially be populated with the
 following suberror codes:
 
-| Number | Meaning | Reference |  Change Controller |
-| 0 | Reserved | This-Document | IETF |
-| 1 | Malware | This-Document | IETF |
-| 2 | Phishing | This-Document | IETF |
-| 3 | Spam  | This-Document | IETF |
-| 4 | Spyware | This-Document | IETF |
-| 5 | Adware | This-Document | IETF |
-| 6 | Network policy imposed by the operator of the network | This-Document | IETF |
+| Number | Meaning | RFC8914 error code applicability | Reference |  Change Controller |
+|:------:|:--------|:---------------------------------|:----------|:------------------:|
+| 0 | Reserved| Blocked, Forged, Censored, Filtered | This-Document | IETF |
+| 1 | Malware (as defined in Section 5.5 of {{!RFC5901}}) | Blocked, Forged, Censored, Filtered | This-Document | IETF |
+| 2 | Phishing (as defined in Section 5.5 of {{!RFC5901}}) | Blocked, Forged, Censored, Filtered | This-Document | IETF |
+| 3 | Spam (as defined on Page 289 of {{!RFC4949}})  | Blocked, Forged, Censored, Filtered | This-Document | IETF |
+| 4 | Spyware (as defined on Page 291 of {{!RFC4949}}) | Blocked, Forged, Censored, Filtered | This-Document | IETF |
+| 5 | Network policy imposed by the network operator | Blocked, Forged | This-Document | IETF |
 {: #reg title='Initial SubError Code Rregistry'}
 
 New entries in this registry are subject to an Expert Review
