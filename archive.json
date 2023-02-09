@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-02-07T01:11:33.676009+00:00",
+  "timestamp": "2023-02-09T01:12:22.216036+00:00",
   "repo": "danwing/dnsop2",
   "labels": [
     {
@@ -83,6 +83,32 @@
           "updatedAt": "2023-02-06T06:22:30Z"
         }
       ],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOI5jTFc5JePOd",
+      "title": "updates to Table of sub-errors",
+      "url": "https://github.com/danwing/dnsop2/pull/2",
+      "state": "OPEN",
+      "author": "danwing",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-02-07T22:16:14Z",
+      "updatedAt": "2023-02-07T22:16:14Z",
+      "baseRepository": "danwing/dnsop2",
+      "baseRefName": "main",
+      "baseRefOid": "6012c2c2cab95b1cdb879edfa3368a90744881bf",
+      "headRepository": "danwing/dnsop2",
+      "headRefName": "table_update",
+      "headRefOid": "f36ce3dec8b94c8d9c060eb2f714b64a479af653",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
       "reviews": []
     }
   ]
